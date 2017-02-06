@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">FakeWechatLocation</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">FakeWechatLocation</string>
 </resources>
