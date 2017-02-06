@@ -23,12 +23,10 @@ public class HookLoadPackage implements IXposedHookLoadPackage{
         // Default set location at Philippines Manila
         double la = Double.parseDouble(sharedLocationData.getString("la", "14.546748"));
         double lo = Double.parseDouble(sharedLocationData.getString("lo", "121.0523612"));
-        int mcc = Integer.parseInt(sharedLocationData.getString("mcc", "512"));
-        int mnc = Integer.parseInt(sharedLocationData.getString("mnc", "2"));
 
         XposedBridge.log("handleLoadPackage: ################## la =" + la);
         XposedBridge.log("handleLoadPackage: ################## lo =" + lo);
 
-        HookUtils.HookAndChange(lpparam.classLoader, la, lo, mcc, mnc);
+        HookUtils.HookAndChange(lpparam.classLoader, la, lo);
     }
 }
