@@ -20,6 +20,7 @@ public class HookLoadPackage implements IXposedHookLoadPackage{
 
         sharedLocationData.reload();
 
+        // Default set location at Philippines Manila
         double la = Double.parseDouble(sharedLocationData.getString("la", "14.546748"));
         double lo = Double.parseDouble(sharedLocationData.getString("lo", "121.0523612"));
         int mcc = Integer.parseInt(sharedLocationData.getString("mcc", "512"));
